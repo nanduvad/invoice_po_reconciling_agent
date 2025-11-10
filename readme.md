@@ -16,7 +16,7 @@ Deployment: Uvicorn
 
 🚀 Setup & Run Commands
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/invoice-po-reconcile-agent.git
+git clone https://github.com/nanduvad/invoice_po_reconcile_agent.git
 cd invoice-po-reconcile-agent
 
 2️⃣ Create Virtual Environment
@@ -27,7 +27,6 @@ python -m venv .venv
 Windows
 
 .venv\Scripts\activate
-
 
 Mac/Linux
 
@@ -43,7 +42,11 @@ Create a .env file in the project root:
 GEMINI_API_KEY=your_google_gemini_api_key
 
 6️⃣ Run the FastAPI Server
-uvicorn app.main:app --reload
+uvicorn backend.main:app --reload
+
+7.Run streamlit 
+streamlit run frontend/app.py
+
 
 
 Open in browser → http://127.0.0.1:8000
